@@ -48,10 +48,10 @@ File Lain
 - Font Awesome untuk ikon.
 
 5. Cara Menjalankan Proyek
-1. Pastikan Node.js sudah terinstal.
-2. Jalankan `npm install` untuk menginstal dependensi (Vite).
-3. Jalankan `npm run dev` untuk memulai server pengembangan.
-4. Akses website di browser melalui alamat yang diberikan Vite (biasanya http://localhost:5173).
+   1. Pastikan Node.js sudah terinstal.
+   2. Jalankan `npm install` untuk menginstal dependensi (Vite).
+   3. Jalankan `npm run dev` untuk memulai server pengembangan.
+   4. Akses website di browser melalui alamat yang diberikan Vite (biasanya http://localhost:5173).
 
 6. Catatan
 - Semua data (statistik, testimoni, dsb) bersifat statis/hardcoded.
