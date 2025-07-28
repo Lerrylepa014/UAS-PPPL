@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - FinFlow</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-chart-line"></i>
+                <span>FinFlow</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>FinTech Insights</h1>
+            <p>Latest trends, tips, and insights from the world of financial technology</p>
+        </div>
+    </section>
+
+    <!-- Blog Filters & Search -->
+    <section class="blog-filters">
+        <div class="container">
+            <div class="filter-search-container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Posts</button>
+                    <button class="filter-btn" data-filter="finance">Finance</button>
+                    <button class="filter-btn" data-filter="security">Security</button>
+                    <button class="filter-btn" data-filter="tips">Tips</button>
+                    <button class="filter-btn" data-filter="technology">Technology</button>
+                </div>
+                
+                <div class="search-container">
+                    <input type="text" id="blog-search" placeholder="Search articles...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="featured-article">
+        <div class="container">
+            <div class="featured-card">
+                <div class="featured-image">
+                    <img src="https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=800&h=400&fit=crop" alt="The Future of Digital Banking">
+                    <div class="featured-badge">Featured</div>
+                </div>
+                <div class="featured-content">
+                    <div class="article-meta">
+                        <span class="category finance">Finance</span>
+                        <span class="read-time">8 min read</span>
+                        <span class="date">January 15, 2025</span>
+                    </div>
+                    <h2>The Future of Digital Banking: Trends to Watch in 2025</h2>
+                    <p>Explore the latest innovations reshaping the banking industry, from AI-powered personal finance assistants to blockchain-based payment systems. Discover how these technologies are creating more accessible and secure financial services for everyone.</p>
+                    <div class="article-author">
+                        <img src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=50&h=50&fit=crop" alt="Alex Thompson">
+                        <div class="author-info">
+                            <strong>Alex Thompson</strong>
+                            <span>CEO & Founder</span>
+                        </div>
+                    </div>
+                    <button class="read-more-btn">Read Full Article</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Articles Grid -->
+    <section class="blog-articles">
+        <div class="container">
+            <div class="articles-grid" id="articles-grid">
+                <article class="article-card" data-category="security">
+                    <div class="article-image">
+                        <img src="https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="Cybersecurity in FinTech">
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="category security">Security</span>
+                            <span class="read-time">6 min read</span>
+                            <span class="date">January 12, 2025</span>
+                        </div>
+                        <h3>Cybersecurity Best Practices for FinTech Applications</h3>
+                        <p>Learn essential security measures every fintech company should implement to protect user data and prevent cyber attacks.</p>
+                        <div class="article-author">
+                            <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=40&h=40&fit=crop" alt="David Kim">
+                            <span>David Kim</span>
+                        </div>
+                        <div class="social-share">
+                            <button class="share-btn" data-platform="facebook"><i class="fab fa-facebook"></i></button>
+                            <button class="share-btn" data-platform="twitter"><i class="fab fa-twitter"></i></button>
+                            <button class="share-btn" data-platform="linkedin"><i class="fab fa-linkedin"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card" data-category="tips">
+                    <div class="article-image">
+                        <img src="https://images.pexels.com/photos/3483098/pexels-photo-3483098.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="Personal Finance Management">
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="category tips">Tips</span>
+                            <span class="read-time">4 min read</span>
+                            <span class="date">January 10, 2025</span>
+                        </div>
+                        <h3>5 Smart Budgeting Tips for Young Professionals</h3>
+                        <p>Practical advice for managing your finances effectively in your 20s and 30s, including investment strategies and debt management.</p>
+                        <div class="article-author">
+                            <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=40&h=40&fit=crop" alt="Emma Johnson">
+                            <span>Emma Johnson</span>
+                        </div>
+                        <div class="social-share">
+                            <button class="share-btn" data-platform="facebook"><i class="fab fa-facebook"></i></button>
+                            <button class="share-btn" data-platform="twitter"><i class="fab fa-twitter"></i></button>
+                            <button class="share-btn" data-platform="linkedin"><i class="fab fa-linkedin"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card" data-category="technology">
+                    <div class="article-image">
+                        <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="AI in Finance">
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="category technology">Technology</span>
+                            <span class="read-time">7 min read</span>
+                            <span class="date">January 8, 2025</span>
+                        </div>
+                        <h3>How AI is Revolutionizing Investment Management</h3>
+                        <p>Discover how artificial intelligence and machine learning are transforming portfolio management and investment decisions.</p>
+                        <div class="article-author">
+                            <img src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=40&h=40&fit=crop" alt="Sarah Martinez">
+                            <span>Sarah Martinez</span>
+                        </div>
+                        <div class="social-share">
+                            <button class="share-btn" data-platform="facebook"><i class="fab fa-facebook"></i></button>
+                            <button class="share-btn" data-platform="twitter"><i class="fab fa-twitter"></i></button>
+                            <button class="share-btn" data-platform="linkedin"><i class="fab fa-linkedin"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card" data-category="finance">
+                    <div class="article-image">
+                        <img src="https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="Cryptocurrency Trends">
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="category finance">Finance</span>
+                            <span class="read-time">5 min read</span>
+                            <span class="date">January 5, 2025</span>
+                        </div>
+                        <h3>Understanding Cryptocurrency Integration in Traditional Banking</h3>
+                        <p>Explore how traditional banks are adapting to include cryptocurrency services and what this means for the future of finance.</p>
+                        <div class="article-author">
+                            <img src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=40&h=40&fit=crop" alt="Alex Thompson">
+                            <span>Alex Thompson</span>
+                        </div>
+                        <div class="social-share">
+                            <button class="share-btn" data-platform="facebook"><i class="fab fa-facebook"></i></button>
+                            <button class="share-btn" data-platform="twitter"><i class="fab fa-twitter"></i></button>
+                            <button class="share-btn" data-platform="linkedin"><i class="fab fa-linkedin"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card" data-category="tips">
+                    <div class="article-image">
+                        <img src="https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="Digital Payments">
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="category tips">Tips</span>
+                            <span class="read-time">3 min read</span>
+                            <span class="date">January 3, 2025</span>
+                        </div>
+                        <h3>Maximizing Rewards from Digital Payment Platforms</h3>
+                        <p>Learn how to take advantage of cashback, rewards, and benefits offered by various digital payment platforms.</p>
+                        <div class="article-author">
+                            <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=40&h=40&fit=crop" alt="Emma Johnson">
+                            <span>Emma Johnson</span>
+                        </div>
+                        <div class="social-share">
+                            <button class="share-btn" data-platform="facebook"><i class="fab fa-facebook"></i></button>
+                            <button class="share-btn" data-platform="twitter"><i class="fab fa-twitter"></i></button>
+                            <button class="share-btn" data-platform="linkedin"><i class="fab fa-linkedin"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card" data-category="security">
+                    <div class="article-image">
+                        <img src="https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="Fraud Prevention">
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="category security">Security</span>
+                            <span class="read-time">6 min read</span>
+                            <span class="date">December 30, 2024</span>
+                        </div>
+                        <h3>Advanced Fraud Detection Techniques in Digital Banking</h3>
+                        <p>Understand the latest methods used to detect and prevent financial fraud in digital banking environments.</p>
+                        <div class="article-author">
+                            <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=40&h=40&fit=crop" alt="David Kim">
+                            <span>David Kim</span>
+                        </div>
+                        <div class="social-share">
+                            <button class="share-btn" data-platform="facebook"><i class="fab fa-facebook"></i></button>
+                            <button class="share-btn" data-platform="twitter"><i class="fab fa-twitter"></i></button>
+                            <button class="share-btn" data-platform="linkedin"><i class="fab fa-linkedin"></i></button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pagination -->
+    <section class="pagination-section">
+        <div class="container">
+            <div class="pagination" id="pagination">
+                <button class="page-btn prev" onclick="previousPage()" disabled>
+                    <i class="fas fa-chevron-left"></i> Previous
+                </button>
+                
+                <div class="page-numbers">
+                    <button class="page-number active" data-page="1">1</button>
+                    <button class="page-number" data-page="2">2</button>
+                    <button class="page-number" data-page="3">3</button>
+                    <span class="page-dots">...</span>
+                    <button class="page-number" data-page="8">8</button>
+                </div>
+                
+                <button class="page-btn next" onclick="nextPage()">
+                    Next <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Stay Updated with FinTech Insights</h2>
+                    <p>Subscribe to our newsletter and never miss the latest trends, tips, and innovations in financial technology.</p>
+                </div>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" id="newsletter-email" placeholder="Enter your email address" required>
+                    <button type="submit" class="cta-button primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-chart-line"></i>
+                        <span>FinFlow</span>
+                    </div>
+                    <p>Revolutionizing financial technology with secure, smart, and innovative solutions.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Digital Payments</a></li>
+                        <li><a href="services.html">Investment Tools</a></li>
+                        <li><a href="services.html">Budgeting Solutions</a></li>
+                        <li><a href="services.html">Loan Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 FinFlow. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/animations.js"></script>
+    <script src="scripts/components.js"></script>
+</body>
+</html>

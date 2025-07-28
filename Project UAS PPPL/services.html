@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - FinFlow</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-chart-line"></i>
+                <span>FinFlow</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link active">Services</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>Comprehensive financial technology solutions tailored to your needs</p>
+        </div>
+    </section>
+
+    <!-- Service Filters -->
+    <section class="service-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Services</button>
+                <button class="filter-btn" data-filter="payments">Payments</button>
+                <button class="filter-btn" data-filter="savings">Savings</button>
+                <button class="filter-btn" data-filter="investments">Investments</button>
+                <button class="filter-btn" data-filter="loans">Loans</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="services-grid">
+        <div class="container">
+            <div class="services-container">
+                <div class="service-card" data-category="payments">
+                    <div class="service-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Digital Wallet</h3>
+                    <p>Secure digital wallet with multi-currency support and instant transfers.</p>
+                    <ul class="service-features">
+                        <li>Multi-currency support</li>
+                        <li>Instant transfers</li>
+                        <li>Bank-level security</li>
+                        <li>24/7 availability</li>
+                    </ul>
+                    <div class="service-price">From $0/month</div>
+                </div>
+
+                <div class="service-card" data-category="payments">
+                    <div class="service-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3>Real-time Transfers</h3>
+                    <p>Lightning-fast money transfers with real-time processing and tracking.</p>
+                    <ul class="service-features">
+                        <li>Instant notifications</li>
+                        <li>Low transaction fees</li>
+                        <li>Global reach</li>
+                        <li>Transaction tracking</li>
+                    </ul>
+                    <div class="service-price">From $2.99/transfer</div>
+                </div>
+
+                <div class="service-card" data-category="savings">
+                    <div class="service-icon">
+                        <i class="fas fa-piggy-bank"></i>
+                    </div>
+                    <h3>Smart Savings</h3>
+                    <p>Automated savings with competitive interest rates and goal tracking.</p>
+                    <ul class="service-features">
+                        <li>Automated savings</li>
+                        <li>Goal tracking</li>
+                        <li>Competitive rates</li>
+                        <li>Round-up features</li>
+                    </ul>
+                    <div class="service-price">2.5% APY</div>
+                </div>
+
+                <div class="service-card" data-category="savings">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>Budget Management</h3>
+                    <p>AI-powered budgeting tools with spending insights and alerts.</p>
+                    <ul class="service-features">
+                        <li>Expense categorization</li>
+                        <li>Spending insights</li>
+                        <li>Budget alerts</li>
+                        <li>Goal tracking</li>
+                    </ul>
+                    <div class="service-price">From $9.99/month</div>
+                </div>
+
+                <div class="service-card" data-category="investments">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>AI Investment Platform</h3>
+                    <p>Machine learning-powered investment recommendations and portfolio management.</p>
+                    <ul class="service-features">
+                        <li>Portfolio optimization</li>
+                        <li>Risk assessment</li>
+                        <li>Market analysis</li>
+                        <li>Automated rebalancing</li>
+                    </ul>
+                    <div class="service-price">0.25% management fee</div>
+                </div>
+
+                <div class="service-card" data-category="investments">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Robo-Advisor</h3>
+                    <p>Automated investment management with personalized strategies.</p>
+                    <ul class="service-features">
+                        <li>Personalized strategies</li>
+                        <li>Tax optimization</li>
+                        <li>Dividend reinvestment</li>
+                        <li>Performance tracking</li>
+                    </ul>
+                    <div class="service-price">0.50% management fee</div>
+                </div>
+
+                <div class="service-card" data-category="loans">
+                    <div class="service-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Personal Loans</h3>
+                    <p>Quick approval personal loans with competitive rates and flexible terms.</p>
+                    <ul class="service-features">
+                        <li>Quick approval</li>
+                        <li>Competitive rates</li>
+                        <li>Flexible terms</li>
+                        <li>No hidden fees</li>
+                    </ul>
+                    <div class="service-price">From 5.99% APR</div>
+                </div>
+
+                <div class="service-card" data-category="loans">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Mortgage Solutions</h3>
+                    <p>Smart mortgage solutions with pre-approval and rate comparison tools.</p>
+                    <ul class="service-features">
+                        <li>Pre-approval process</li>
+                        <li>Rate comparison</li>
+                        <li>Digital documentation</li>
+                        <li>Expert guidance</li>
+                    </ul>
+                    <div class="service-price">From 3.25% APR</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Price Calculator -->
+    <section class="price-calculator">
+        <div class="container">
+            <h2 class="section-title">Fee Calculator</h2>
+            <div class="calculator-container">
+                <div class="calculator-inputs">
+                    <div class="input-group">
+                        <label for="transfer-amount">Transfer Amount ($)</label>
+                        <input type="number" id="transfer-amount" value="1000" min="1" max="100000">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="transfer-type">Transfer Type</label>
+                        <select id="transfer-type">
+                            <option value="domestic">Domestic Transfer</option>
+                            <option value="international">International Transfer</option>
+                            <option value="express">Express Transfer</option>
+                        </select>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="currency-pair">Currency Pair</label>
+                        <select id="currency-pair">
+                            <option value="usd-eur">USD to EUR</option>
+                            <option value="usd-gbp">USD to GBP</option>
+                            <option value="usd-jpy">USD to JPY</option>
+                            <option value="eur-gbp">EUR to GBP</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="calculator-results">
+                    <div class="result-item">
+                        <span class="result-label">Transfer Fee:</span>
+                        <span class="result-value" id="transfer-fee">$2.99</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Exchange Rate:</span>
+                        <span class="result-value" id="exchange-rate">1.08</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">You Send:</span>
+                        <span class="result-value" id="send-amount">$1,002.99</span>
+                    </div>
+                    <div class="result-item total">
+                        <span class="result-label">Recipient Gets:</span>
+                        <span class="result-value" id="receive-amount">€925.93</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="comparison-table">
+        <div class="container">
+            <h2 class="section-title">Plan Comparison</h2>
+            <div class="table-container">
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th>Features</th>
+                            <th>Basic</th>
+                            <th>Premium</th>
+                            <th>Enterprise</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monthly Fee</td>
+                            <td>Free</td>
+                            <td>$9.99</td>
+                            <td>$29.99</td>
+                        </tr>
+                        <tr>
+                            <td>Digital Wallet</td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Free Transfers (Monthly)</td>
+                            <td>3</td>
+                            <td>10</td>
+                            <td>Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td>Investment Tools</td>
+                            <td><i class="fas fa-times text-danger"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td>AI Budget Assistant</td>
+                            <td><i class="fas fa-times text-danger"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Priority Support</td>
+                            <td><i class="fas fa-times text-danger"></i></td>
+                            <td><i class="fas fa-times text-danger"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Custom Reports</td>
+                            <td><i class="fas fa-times text-danger"></i></td>
+                            <td><i class="fas fa-times text-danger"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><button class="cta-button secondary">Get Started</button></td>
+                            <td><button class="cta-button primary">Choose Premium</button></td>
+                            <td><button class="cta-button">Contact Sales</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Package Customization -->
+    <section class="package-customization">
+        <div class="container">
+            <h2 class="section-title">Customize Your Package</h2>
+            <form class="customization-form" id="customization-form">
+                <div class="form-grid">
+                    <div class="form-section">
+                        <h3>Core Services</h3>
+                        <div class="checkbox-group">
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="service" value="wallet" checked>
+                                <span class="checkmark"></span>
+                                Digital Wallet (Free)
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="service" value="transfers" data-price="5">
+                                <span class="checkmark"></span>
+                                Unlimited Transfers (+$5/month)
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="service" value="savings" data-price="3">
+                                <span class="checkmark"></span>
+                                Smart Savings (+$3/month)
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h3>Investment Tools</h3>
+                        <div class="checkbox-group">
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="service" value="robo-advisor" data-price="10">
+                                <span class="checkmark"></span>
+                                Robo-Advisor (+$10/month)
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="service" value="portfolio" data-price="15">
+                                <span class="checkmark"></span>
+                                Portfolio Management (+$15/month)
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="service" value="research" data-price="8">
+                                <span class="checkmark"></span>
+                                Market Research (+$8/month)
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h3>Premium Features</h3>
+                        <div class="checkbox-group">
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="service" value="ai-budget" data-price="7">
+                                <span class="checkmark"></span>
+                                AI Budget Assistant (+$7/month)
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="service" value="priority-support" data-price="12">
+                                <span class="checkmark"></span>
+                                Priority Support (+$12/month)
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="service" value="custom-reports" data-price="20">
+                                <span class="checkmark"></span>
+                                Custom Reports (+$20/month)
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="package-summary">
+                    <div class="summary-content">
+                        <h3>Your Custom Package</h3>
+                        <div class="selected-services" id="selected-services">
+                            <div class="service-item">Digital Wallet - Free</div>
+                        </div>
+                        <div class="total-price">
+                            <span>Total Monthly Cost: </span>
+                            <span class="price" id="total-price">$0.00</span>
+                        </div>
+                        <button type="submit" class="cta-button primary">Get Custom Quote</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-chart-line"></i>
+                        <span>FinFlow</span>
+                    </div>
+                    <p>Revolutionizing financial technology with secure, smart, and innovative solutions.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Digital Payments</a></li>
+                        <li><a href="services.html">Investment Tools</a></li>
+                        <li><a href="services.html">Budgeting Solutions</a></li>
+                        <li><a href="services.html">Loan Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 FinFlow. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/animations.js"></script>
+    <script src="scripts/components.js"></script>
+</body>
+</html>

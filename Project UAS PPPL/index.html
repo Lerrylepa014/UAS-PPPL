@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinFlow - Innovative Financial Technology Solutions</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-chart-line"></i>
+                <span>FinFlow</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="parallax-layer" data-speed="0.5"></div>
+            <div class="parallax-layer" data-speed="0.3"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="typing-text" data-text="Secure. Smart. Financial Freedom."></span>
+            </h1>
+            <p class="hero-subtitle">Revolutionizing the way you manage, invest, and grow your wealth with cutting-edge financial technology solutions.</p>
+            <button class="cta-button" onclick="scrollToSection('features')">
+                Get Started <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <div class="stat-number" data-target="50000">0</div>
+                <div class="stat-label">Active Users</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="2500000">0</div>
+                <div class="stat-label">Assets Managed ($)</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="1200000">0</div>
+                <div class="stat-label">Transactions Processed</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Our Core Features</h2>
+            <div class="features-grid">
+                <div class="feature-card" data-feature="wallet">
+                    <div class="feature-icon">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <h3>Digital Wallet</h3>
+                    <p>Secure and convenient digital wallet for all your payment needs.</p>
+                    <div class="feature-details">
+                        <ul>
+                            <li>Multi-currency support</li>
+                            <li>Instant transfers</li>
+                            <li>Bank-level security</li>
+                            <li>24/7 availability</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-feature="transfer">
+                    <div class="feature-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3>Real-time Transfer</h3>
+                    <p>Lightning-fast money transfers with real-time processing.</p>
+                    <div class="feature-details">
+                        <ul>
+                            <li>Instant notifications</li>
+                            <li>Low transaction fees</li>
+                            <li>Global reach</li>
+                            <li>Transaction tracking</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-feature="budget">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>Smart Budgeting</h3>
+                    <p>AI-powered budgeting tools to help you manage your finances.</p>
+                    <div class="feature-details">
+                        <ul>
+                            <li>Expense categorization</li>
+                            <li>Spending insights</li>
+                            <li>Budget alerts</li>
+                            <li>Goal tracking</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-feature="investment">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>AI Investment</h3>
+                    <p>Intelligent investment recommendations powered by machine learning.</p>
+                    <div class="feature-details">
+                        <ul>
+                            <li>Portfolio optimization</li>
+                            <li>Risk assessment</li>
+                            <li>Market analysis</li>
+                            <li>Automated rebalancing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonial-carousel">
+                <div class="testimonial-track" id="testimonial-track">
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"FinFlow has completely transformed how I manage my finances. The AI investment feature has helped me grow my portfolio by 30% in just six months!"</p>
+                            <div class="testimonial-author">
+                                <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Sarah Johnson">
+                                <div>
+                                    <strong>Sarah Johnson</strong>
+                                    <span>Tech Entrepreneur</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"The real-time transfer feature is a game-changer for my business. International payments that used to take days now happen instantly."</p>
+                            <div class="testimonial-author">
+                                <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Michael Chen">
+                                <div>
+                                    <strong>Michael Chen</strong>
+                                    <span>Import/Export Business</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"The budgeting tools are incredibly intuitive. I've saved over $5,000 this year just by following the smart recommendations."</p>
+                            <div class="testimonial-author">
+                                <img src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Emily Rodriguez">
+                                <div>
+                                    <strong>Emily Rodriguez</strong>
+                                    <span>Marketing Manager</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-controls">
+                    <button class="testimonial-btn prev" onclick="previousTestimonial()">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="testimonial-dots">
+                        <span class="dot active" onclick="currentTestimonial(1)"></span>
+                        <span class="dot" onclick="currentTestimonial(2)"></span>
+                        <span class="dot" onclick="currentTestimonial(3)"></span>
+                    </div>
+                    <button class="testimonial-btn next" onclick="nextTestimonial()">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Financial Future?</h2>
+                <p>Join thousands of satisfied customers who trust FinFlow with their financial needs.</p>
+                <div class="cta-buttons">
+                    <button class="cta-button primary">Open Account</button>
+                    <button class="cta-button secondary" onclick="scrollToSection('features')">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-chart-line"></i>
+                        <span>FinFlow</span>
+                    </div>
+                    <p>Revolutionizing financial technology with secure, smart, and innovative solutions.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Digital Payments</a></li>
+                        <li><a href="services.html">Investment Tools</a></li>
+                        <li><a href="services.html">Budgeting Solutions</a></li>
+                        <li><a href="services.html">Loan Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 FinFlow. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/animations.js"></script>
+    <script src="scripts/components.js"></script>
+</body>
+</html>

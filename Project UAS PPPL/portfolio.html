@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - FinFlow</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-chart-line"></i>
+                <span>FinFlow</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Portfolio</h1>
+            <p>Success stories and client implementations across various industries</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Filters -->
+    <section class="portfolio-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="startups">Startups</button>
+                <button class="filter-btn" data-filter="banking">Banking</button>
+                <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+                <button class="filter-btn" data-filter="enterprise">Enterprise</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-grid">
+        <div class="container">
+            <div class="portfolio-container">
+                <div class="portfolio-item" data-category="startups">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="TechStart Payment Gateway">
+                        <div class="portfolio-overlay">
+                            <button class="view-btn" onclick="openModal('techstart')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="expand-btn" onclick="openLightbox('https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>TechStart Payment Gateway</h3>
+                        <p>Startup</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Payment Processing</span>
+                            <span class="tag">API Integration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="banking">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Global Bank Digital Transformation">
+                        <div class="portfolio-overlay">
+                            <button class="view-btn" onclick="openModal('globalbank')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="expand-btn" onclick="openLightbox('https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Global Bank Digital Transformation</h3>
+                        <p>Banking</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Digital Banking</span>
+                            <span class="tag">Core Systems</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="ecommerce">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="ShopFlow E-commerce Integration">
+                        <div class="portfolio-overlay">
+                            <button class="view-btn" onclick="openModal('shopflow')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="expand-btn" onclick="openLightbox('https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>ShopFlow E-commerce Integration</h3>
+                        <p>E-commerce</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Payment Gateway</span>
+                            <span class="tag">Fraud Detection</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="enterprise">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="MegaCorp Treasury Management">
+                        <div class="portfolio-overlay">
+                            <button class="view-btn" onclick="openModal('megacorp')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="expand-btn" onclick="openLightbox('https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>MegaCorp Treasury Management</h3>
+                        <p>Enterprise</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Treasury</span>
+                            <span class="tag">Risk Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="startups">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="InvestSmart Robo-Advisor">
+                        <div class="portfolio-overlay">
+                            <button class="view-btn" onclick="openModal('investsmart')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="expand-btn" onclick="openLightbox('https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>InvestSmart Robo-Advisor</h3>
+                        <p>Startup</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">AI/ML</span>
+                            <span class="tag">Investment Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="banking">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Community Bank Mobile App">
+                        <div class="portfolio-overlay">
+                            <button class="view-btn" onclick="openModal('communitybank')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="expand-btn" onclick="openLightbox('https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Community Bank Mobile App</h3>
+                        <p>Banking</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Mobile Banking</span>
+                            <span class="tag">User Experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonials -->
+    <section class="client-testimonials">
+        <div class="container">
+            <h2 class="section-title">Client Success Stories</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"FinFlow's payment gateway increased our conversion rate by 35% and reduced transaction costs by 20%."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=80&h=80&fit=crop" alt="John Smith">
+                            <div>
+                                <strong>John Smith</strong>
+                                <span>CEO, TechStart</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The digital transformation project was completed ahead of schedule and exceeded all performance metrics."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=80&h=80&fit=crop" alt="Maria Rodriguez">
+                            <div>
+                                <strong>Maria Rodriguez</strong>
+                                <span>CTO, Global Bank</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Our fraud detection improved by 90% after implementing FinFlow's AI-powered security solutions."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=80&h=80&fit=crop" alt="Lisa Chen">
+                            <div>
+                                <strong>Lisa Chen</strong>
+                                <span>Head of Security, ShopFlow</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+            <img src="" alt="" id="lightbox-image">
+        </div>
+    </div>
+
+    <!-- Modal Templates -->
+    <div class="modal" id="portfolio-modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <div class="modal-body" id="modal-body">
+                <!-- Dynamic content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-chart-line"></i>
+                        <span>FinFlow</span>
+                    </div>
+                    <p>Revolutionizing financial technology with secure, smart, and innovative solutions.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Digital Payments</a></li>
+                        <li><a href="services.html">Investment Tools</a></li>
+                        <li><a href="services.html">Budgeting Solutions</a></li>
+                        <li><a href="services.html">Loan Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 FinFlow. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/animations.js"></script>
+    <script src="scripts/components.js"></script>
+</body>
+</html>
